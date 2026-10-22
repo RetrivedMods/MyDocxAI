@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#EBE2CC">
+  <title>MyDocx.ai - Workspace</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Andika:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="/static/styles.css" rel="stylesheet">
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar">
+      <p class="sidebar-caption">YOUR KNOWLEDGE SPACE</p>
+      <div class="documents-heading">
+        <span>YOUR DOCUMENTS</span>
+        <span id="document-count" class="count-badge">0</span>
+      </div>
+      <div id="document-list" class="document-list">
+        <p class="empty-documents">Your uploaded files will appear here.</p>
+      </div>
+    </aside>
+
+    <main class="main-panel">
+      <header class="topbar">
+        <div>
+          <h1>MyDocx<span class="brand-accent">.ai</span></h1>
+          <p class="topbar-tagline">Making Documents Easy to Understand.</p>
+        </div>
+        <div class="account-actions">
+          <span id="account-name" class="account-name"></span>
+          <button id="logout-button" class="logout-button" type="button">Sign out</button>
+        </div>
+      </header>
+      <section id="chat-area" class="chat-area" aria-live="polite">
+        <div id="welcome" class="welcome">
+          <p class="eyebrow">YOUR DOCUMENTS, IN CONVERSATION</p>
+          <h2>What would you like to know?</h2>
+          <p class="welcome-description">Upload documents and ask a question. MyDocx.ai will find the most relevant passages and answer from your files.</p>
+          <div class="suggestions">
+            <button class="suggestion" type="button" data-question="Summarize the key points in my documents"><span>Summarize the key points</span></button>
+            <button class="suggestion" type="button" data-question="What are the main dates or deadlines?"><span>Find dates and deadlines</span></button>
+            <button class="suggestion" type="button" data-question="What are the most important conclusions?"><span>Find important conclusions</span></button>
+          </div>
+        </div>
+      </section>
+      <div class="composer-wrap">
+        <form id="chat-form" class="composer">
+          <input id="attachment-input" type="file" multiple hidden aria-label="Choose documents to attach" accept=".pdf,.txt,.md,.csv,.json,.html,.xml,.docx,.pptx,.png,.jpg,.jpeg,.tif,.tiff,.bmp,.webp">
+          <div id="pending-attachments" class="pending-attachments" aria-live="polite"></div>
+          <div class="composer-input-row">
+            <button id="attach-files" class="attach-button" type="button" aria-label="Attach files" title="Attach files">+</button>
+            <textarea id="question" rows="1" placeholder="Ask anything about your documents…" aria-label="Your question" maxlength="2000"></textarea>
+            <button id="send-button" class="send-button" type="submit" aria-label="Send message">↑</button>
+          </div>
+        </form>
+        <p class="composer-hint">Answers are grounded in your files. Check cited source passages for details.</p>
+      </div>
+    </main>
+  </div>
+  <div id="toast-region" class="toast-region" aria-live="assertive"></div>
+  <script src="/static/app.js"></script>
+</body>
+</html>

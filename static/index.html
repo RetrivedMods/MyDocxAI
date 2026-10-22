@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#EBE2CC">
+  <meta name="description" content="Turn your PDFs, notes, and documents into clear answers with MyDocx.ai.">
+  <title>MyDocx.ai - Making Documents Easy to Understand</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Andika:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="/static/styles.css" rel="stylesheet">
+  <link href="/static/home.css" rel="stylesheet">
+</head>
+<body class="home-page">
+  <header class="home-nav">
+    <a class="home-brand" href="/" aria-label="MyDocx.ai home">
+      <span>MyDocx<span class="brand-accent">.ai</span></span>
+    </a>
+    <button id="nav-toggle" class="nav-toggle" type="button" aria-label="Open navigation" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <nav id="home-nav-links" class="home-nav-links" aria-label="Main navigation">
+      <a href="#how-it-works">How it works</a>
+      <a href="#features">Features</a>
+      <a class="nav-signin" href="/login">Log in</a>
+      <a class="nav-register" href="/register">Create free account <span aria-hidden="true">↗</span></a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero-section">
+      <div class="hero-copy">
+        <div class="hero-kicker">YOUR DOCUMENTS, FINALLY IN FOCUS</div>
+        <h1>Making Documents<br><span>Easy to Understand.</span></h1>
+        <p class="hero-description">The answers are already in your files. MyDocx.ai helps you find them, understand them, and move on with confidence.</p>
+        <div class="hero-actions">
+          <a id="hero-cta" class="primary-cta" href="/register">Get started for free <span aria-hidden="true">→</span></a>
+          <a class="secondary-cta" href="#how-it-works">See how it works</a>
+        </div>
+        <div class="hero-trust">
+          <span>Ask in plain language</span>
+          <span class="trust-divider"></span>
+          <span>Answers linked to your sources</span>
+        </div>
+      </div>
+
+      <div class="hero-visual" aria-label="Preview of document question answering">
+        <div class="visual-glow"></div>
+        <div class="floating-note note-top">Your files stay yours</div>
+        <div class="document-preview">
+          <div class="preview-toolbar">
+            <div class="preview-file">
+              <svg class="document-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 2.75h7l5 5v13.5H6z"/><path d="M13 2.75v5h5M9 13h6M9 16.5h6"/></svg>
+              <span>Course notes.pdf</span>
+            </div>
+            <span class="preview-pages">12 pages</span>
+          </div>
+          <div class="paper-content">
+            <div class="paper-eyebrow">CHAPTER 04</div>
+            <div class="paper-title">The water cycle</div>
+            <div class="paper-line line-long"></div>
+            <div class="paper-line line-medium"></div>
+            <div class="paper-paragraph">Water moves continuously between the atmosphere, land, and oceans through a series of natural processes.</div>
+            <div class="paper-highlight"><span></span> Evaporation transforms liquid water into vapor.</div>
+            <div class="paper-line line-medium"></div>
+            <div class="paper-line line-short"></div>
+          </div>
+        </div>
+        <div class="chat-preview">
+          <div class="chat-preview-label">ASK YOUR DOCUMENTS</div>
+          <div id="demo-question" class="demo-question">Can you explain evaporation simply?</div>
+          <div class="demo-answer">
+            <p>Evaporation is when the sun warms water and turns it into an invisible gas that rises into the air.</p>
+          </div>
+          <div class="demo-source">
+            <svg class="document-icon source-document-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 2.75h7l5 5v13.5H6z"/><path d="M13 2.75v5h5M9 13h6M9 16.5h6"/></svg>
+            <span>Course notes.pdf</span><span class="source-page">Page 4</span>
+          </div>
+        </div>
+        <div class="floating-note note-bottom">Clear answers, with context</div>
+      </div>
+      <div class="hero-bottom-fade"></div>
+    </section>
+
+    <section id="how-it-works" class="steps-section">
+      <div class="section-heading" data-reveal>
+        <p class="section-kicker">LESS SEARCHING. MORE UNDERSTANDING.</p>
+        <h2>From file to <span>“got it.”</span></h2>
+        <p>Skip the scrolling. Get to what matters in three simple steps.</p>
+      </div>
+      <div class="steps-grid">
+        <article class="step-card" data-reveal>
+          <div class="step-number">01</div>
+          <h3>Add your documents</h3>
+          <p>Bring PDFs, class notes, reports, and more into one searchable space.</p>
+        </article>
+        <article class="step-card" data-reveal>
+          <div class="step-number">02</div>
+          <h3>Ask the way you think</h3>
+          <p>Ask a direct question or request a quick explanation in everyday language.</p>
+        </article>
+        <article class="step-card" data-reveal>
+          <div class="step-number">03</div>
+          <h3>Understand the answer</h3>
+          <p>Get a clear response with source passages to help you check the details.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="features" class="features-section">
+      <div class="features-copy" data-reveal>
+        <p class="section-kicker">BUILT FOR YOUR EVERYDAY READING</p>
+        <h2>Big documents.<br><span>Small effort.</span></h2>
+        <p>Whether it is one page or a whole library, spend your time learning - not hunting for a sentence.</p>
+        <a class="text-cta" href="/register">Try it with your documents <span aria-hidden="true">→</span></a>
+      </div>
+      <div class="feature-interactive" data-reveal>
+        <div class="feature-tabs" role="tablist" aria-label="MyDocx features">
+          <button class="feature-tab active" type="button" role="tab" aria-selected="true" data-feature="answers">Clear answers</button>
+          <button class="feature-tab" type="button" role="tab" aria-selected="false" data-feature="sources">Source context</button>
+          <button class="feature-tab" type="button" role="tab" aria-selected="false" data-feature="formats">Your formats</button>
+        </div>
+        <div class="feature-panel" role="tabpanel">
+          <h3 id="feature-title">The short version, first.</h3>
+          <p id="feature-description">Get a direct explanation before the extra details. Ask follow-up questions whenever you need to go deeper.</p>
+          <div id="feature-example" class="feature-example"><span>Try asking</span> “Explain this like I’m new to the topic.”</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="faq-section" data-reveal>
+      <div class="faq-intro">
+        <p class="section-kicker">A FEW QUICK ANSWERS</p>
+        <h2>Good to know.</h2>
+      </div>
+      <div class="faq-list">
+        <details>
+          <summary>What kind of files can I use?</summary>
+          <p>PDFs, Word and PowerPoint files, common text files, and images are supported. Scanned pages and image text can be read using OCR.</p>
+        </details>
+        <details>
+          <summary>Where do the answers come from?</summary>
+          <p>MyDocx.ai searches the text in your uploaded documents and shows relevant source passages alongside its answer.</p>
+        </details>
+        <details>
+          <summary>Can I ask questions without an API key?</summary>
+          <p>Yes. Document search and source passages work locally. Add a Gemini API key in your private .env file to enable generated answers.</p>
+        </details>
+      </div>
+    </section>
+
+    <section class="final-cta" data-reveal>
+      <p class="section-kicker">YOUR NEXT “OH, NOW I GET IT” MOMENT</p>
+      <h2>Let’s make your documents make sense.</h2>
+      <a id="final-cta-link" class="primary-cta" href="/register">Create your free account <span aria-hidden="true">→</span></a>
+    </section>
+  </main>
+
+  <footer class="home-footer">
+    <a class="footer-brand" href="/">MyDocx.ai</a>
+    <span>Making Documents Easy to Understand.</span>
+    <div><a href="/login">Log in</a><a href="/register">Create account</a></div>
+  </footer>
+  <script src="/static/home.js"></script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#EBE2CC">
+  <title>Sign in - MyDocx.ai</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Andika:wght@400;700&display=swap" rel="stylesheet">
+  <link href="/static/styles.css" rel="stylesheet">
+  <link href="/static/auth.css" rel="stylesheet">
+</head>
+<body class="auth-page">
+  <main class="auth-card">
+    <a class="auth-brand" href="/">MyDocx<span>.ai</span></a>
+    <p class="eyebrow">WELCOME BACK</p>
+    <h1>Sign in to your account</h1>
+    <p class="auth-description">Your documents are ready when you are.</p>
+    <form id="auth-form" data-mode="login">
+      <label for="email">Email address</label>
+      <input id="email" name="email" type="email" autocomplete="email" placeholder="you@example.com" required maxlength="254">
+      <label for="password">Password</label>
+      <input id="password" name="password" type="password" autocomplete="current-password" placeholder="Your password" required maxlength="128">
+      <p id="auth-error" class="auth-error" role="alert" hidden></p>
+      <button id="submit-button" class="auth-submit" type="submit">Sign in</button>
+    </form>
+    <p class="auth-switch">New to MyDocx.ai? <a href="/register">Create an account</a></p>
+  </main>
+  <script src="/static/auth.js"></script>
+</body>
+</html>

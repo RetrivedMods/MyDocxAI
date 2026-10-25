@@ -4,14 +4,21 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#EBE2CC">
+  <script>try { if (localStorage.getItem("mydocx-theme") === "dark") document.documentElement.dataset.theme = "dark"; } catch {}</script>
   <title>Create account - MyDocx.ai</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Andika:wght@400;700&display=swap" rel="stylesheet">
-  <link href="/static/styles.css" rel="stylesheet">
-  <link href="/static/auth.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="/static/styles.css?v=3" rel="stylesheet">
+  <link href="/static/auth.css?v=2" rel="stylesheet">
 </head>
 <body class="auth-page">
+  <button class="theme-toggle auth-theme-toggle" type="button" aria-label="Switch to dark mode" aria-pressed="false" title="Switch to dark mode">
+    <span class="theme-icon-wrap" aria-hidden="true">
+      <svg class="theme-icon sun-icon" viewBox="0 0 24 24"><circle cx="12" cy="12" r="3.5"></circle><path d="M12 2v2m0 16v2M4.93 4.93l1.42 1.42m11.3 11.3 1.42 1.42M2 12h2m16 0h2M4.93 19.07l1.42-1.42m11.3-11.3 1.42-1.42"></path></svg>
+      <svg class="theme-icon moon-icon" viewBox="0 0 24 24"><path d="M20.2 15.1A8.2 8.2 0 0 1 8.9 3.8 8.5 8.5 0 1 0 20.2 15.1Z"></path><path d="M16.5 3.5v3m-1.5-1.5h3"></path></svg>
+    </span>
+  </button>
   <main class="auth-card">
     <a class="auth-brand" href="/">MyDocx<span>.ai</span></a>
     <p class="eyebrow">GET STARTED</p>
@@ -29,6 +36,7 @@
     </form>
     <p class="auth-switch">Already have an account? <a href="/login">Sign in</a></p>
   </main>
-  <script src="/static/auth.js"></script>
+  <script src="/static/theme.js?v=1"></script>
+  <script src="/static/auth.js?v=2"></script>
 </body>
 </html>

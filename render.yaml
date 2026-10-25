@@ -5,15 +5,13 @@ services:
     plan: starter
     dockerfilePath: ./Dockerfile
     healthCheckPath: /api/health
-    disk:
-      name: mydocx-data
-      mountPath: /var/data
-      sizeGB: 1
     envVars:
-      - key: MYDOCX_DATA_DIR
-        value: /var/data
-      - key: MYDOCX_USERS_DB
-        value: /var/data/users.sqlite3
+      - key: SUPABASE_URL
+        sync: false
+      - key: SUPABASE_KEY
+        sync: false
+      - key: SUPABASE_DB_URL
+        sync: false
       - key: MYDOCX_COOKIE_SECURE
         value: "true"
       - key: SESSION_SECRET_KEY

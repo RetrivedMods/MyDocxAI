@@ -22,7 +22,9 @@ form.addEventListener("submit", async (event) => {
       const detail = result.detail;
       const message = Array.isArray(detail)
         ? detail.map((item) => item.msg).join(" ")
-        : detail || "Unable to sign in. Please try again.";
+        : detail || (form.dataset.mode === "login"
+          ? "Email or password is incorrect."
+          : "Unable to create account. Please try again.");
       throw new Error(message);
     }
     window.location.replace("/app");
